@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/thu-vien-css.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Kudo Vietnam</title>
+        <link rel="icon" href="IMG/logo.png" type="image/iconx-type">
+    </head>
+    <body>
+        <!--white space-->
+        <div>
+            <button style="background-color: white; border: none; height:60px; width:100%"></button>
+        </div>
+        <!-- Menu -->
+        <section>
+            <div class="menu">
+                <div>
+                    <a href="index.html"> <img src="IMG/logo.png" alt="logo" class="logo"> </a>
+                </div>
+                <div class="col-11">
+                    <ul>
+                        <a href="index.html" style="padding:10px">Trang chủ</a>
+                        <a href="about.html" style="padding:10px">Kudo là gì</a>
+                        <a href="dojo.html" class="present" style="padding:10px">Các Dojo</a>
+                        <a href="services.html" style="padding:10px">Dịch vụ</a>
+                        <a href="gallery.html" style="padding:10px">Sản phẩm</a>
+                        <a href="news.html" style="padding:10px">Tin tức</a>
+                        <a href="contact.html" style="padding:10px">Đăng ký</a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Join-->
+        <section id="join">
+            <div class="row">
+                <div class="col-6">
+                    <div class="join-content">
+                        <h1 style="color:darkred; font-weight: bold; margin-bottom: 20px;">Tham gia tập luyện tại Kudo Việt Nam</h1>
+                        <h3 style="font-weight:medium; margin-bottom: 30px;">Các võ đường Kudo Vietnam luôn mở cửa từ <b style="font-weight: bold;">5pm đến 9pm</b> các ngày trong tuần</h3>
+                        <form class="form-dk">
+                            <label for="branch" style="margin-bottom: 10px"><b>Chọn chi nhánh gần bạn nhất:</b></label>
+                            <select id="branch" name="branch" style="width:60%; margin-bottom: 15px; border: 1px gray solid">
+                                <option value="hcm1">Kudo Honbu Hồ Chí Minh - Quận 2</option>
+                                <option value="hcm2">Kudo Hồ Chí Minh - Quận 11</option>
+                                <option value="hcm3">Kudo Hồ Chí Minh - Quận Gò Vấp</option>
+                                <option value="hcm4">Kudo Hồ Chí Minh - Quận Bình Thạnh</option>
+                                <option value="hn">Kudo Quân đội Hà Nội</option>
+                                <option value="nb1">Kudo Ninh Bình - TP Ninh Bình</option>
+                                <option value="nb2">Kudo Ninh Bình - Yên Mô</option>
+                                <option value="st">Kudo Sơn Tây</option>
+                                <option value="ct">Kudo Cần Thơ</option>
+                                <option value="nt">Kudo Nha Trang</option>
+                                <option value="dn">Kudo Đà Nẵng</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <iframe id="map" width="100%" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.482014508688!2d106.766148!3d10.7754871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175251890e56169%3A0xc5ad1423498a418!2sKudo%20Vietnam%20Honbu!5e0!3m2!1sen!2s!4v1616581234567!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Liên hệ</h4>
+                        <h4>Kudo Vietnam Honbu</h4>
+                        <div>
+                            <p>12 Đường số 30, Cát Lái, Thủ Đức, Hồ Chí Minh</p>
+                        </div>
+                        <div class="footer-icon" style="display: flex;align-items: center; justify-content: center;">
+                            <p>(+84) 937 906 677</p>
+                            <p style="padding-right: 20px; padding-left: 20px;">|</p>
+                            <p>info.kudovietnam@gmail.com</p>
+                        </div>
+                        <div class="footer-icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com/KUDO-ALL-Vietnam-Association-Kudo-Vi%E1%BB%87t-Nam-100095279214136/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/kudo_vietnam_association?igsh=MXNxMnJ5bTN6ZWo4Yg=="><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/@ku-dovietnam1444"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <p><i>© 2025 Kudo All Vietnam Association. All rights reserved.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const branchSelect = document.getElementById("branch");
+                const mapIframe = document.getElementById("map");
+        
+                // Danh sách các URL tương ứng với từng branch
+                const branchMapUrls = {
+                    hcm1: "https://www.google.com/maps/embed?pb=!4m6!3m5!1s0x3175251890e56169:0xc5ad1423498a418!8m2!3d10.7754871!4d106.7687229!16s%2Fg%2F11pxrkhr97?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=1bf080e0-d57c-4513-bd77-fc22d8774857",
+                    hcm2: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0x31752e989790f71b:0x2f87c983143af7c2!8m2!3d10.7701248!4d106.6366288!16s%2Fg%2F11fdy52z4m?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",
+                    hcm3: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0x31752946c81a444b:0x2cdf0722870e66b2!8m2!3d10.8515154!4d106.6574192!16s%2Fg%2F11t6fysh5r?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=b4c65f70-3a41-4417-82b3-6ff55d611ad4",
+                    hcm4: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0x317529ed902944e5:0x3b5eb52efa260d3b!8m2!3d10.8113869!4d106.7172516!16s%2Fg%2F11k3glgbz3?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=c6345d7a-fda1-40ce-a34f-2ea98892cfb5",
+                    hn: "https://www.google.com/maps/embed?pb=!4m6!3m5!1s0x3135a9384ef928a1:0xaf6b8623a973c395!8m2!3d21.0445519!4d105.8993745!16s%2Fg%2F11l4sl5939?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",
+                    nb1: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m5!3m4!1s0x31367a03e986ecc9:0xc74de959e41dcaa4!8m2!3d20.2521161!4d105.9633186?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=0adbd0f1-8537-48ac-b64a-764a09ee9efc",
+                    nb2: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0x313670264626942b:0x7f2a74b9f68c0be!8m2!3d20.1632848!4d106.0067128!16s%2Fg%2F11c1p8d13v?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=a465dbe0-3888-47d4-8353-0e076daf5e1a",
+                    dn: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0x314219d6fadb5e95:0x99b98e1140a0ab9a!8m2!3d16.0550074!4d108.2341133!16s%2Fg%2F11gvtj43d_?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=a3398067-0623-482b-b9a1-1f9688ccc838",
+                    st: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m4!3m3!8m2!3d21.100274!4d105.475855?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",
+                    ct: "https://www.google.com/maps/embed?pb=!3m1!4b1!4m5!3m4!1s0x31a062a905461051:0xeacfe410dc5fe105!8m2!3d10.0466752!4d105.7854978?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=2dd7cc89-2069-4ada-8384-553237c18712",
+                    nt: "https://www.google.com/maps/embed?pb=!4m7!3m6!1s0x31705d3b6bafcc0f:0x7c5ef86028db40ec!8m2!3d12.240969!4d109.1758499!15sChtTaWx2ZXJiYWNrcyBNTUEgLCBuaGEgdHJhbmdaGyIZc2lsdmVyYmFja3MgbW1hIG5oYSB0cmFuZ5IBE21hcnRpYWxfYXJ0c19zY2hvb2zgAQA!16s%2Fg%2F11n7384m18?coh=245187&entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=4fd92f33-80a6-4a5b-8546-fc2c7414c5eb"
+                };
+        
+                // Lắng nghe sự kiện thay đổi trên dropdown
+                branchSelect.addEventListener("change", function () {
+                    const selectedBranch = branchSelect.value; // Lấy giá trị được chọn
+                    if (branchMapUrls[selectedBranch]) {
+                        mapIframe.src = branchMapUrls[selectedBranch]; // Cập nhật src của iframe
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

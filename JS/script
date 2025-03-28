@@ -1,0 +1,49 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const sideMenu = document.getElementById("side-menu");
+    const banner = document.querySelector(".carousel"); 
+    const bannerHeight = banner.offsetHeight; 
+    const menuBarHeight = 60; 
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > bannerHeight - menuBarHeight) {
+            sideMenu.classList.add("fixed"); 
+        } else {
+            sideMenu.classList.remove("fixed"); 
+        }
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); 
+            const targetId = this.getAttribute("href").substring(1); 
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const elementPosition = targetElement.offsetTop; 
+                const offsetPosition = elementPosition - menuBarHeight - bannerHeight; 
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+});
+
+document.getElementById('btn-dk').addEventListener('click', function () {
+    // Lấy dữ liệu từ form (nếu cần)
+    const formData = {
+        fname: document.getElementById('lname').value,
+        lname: document.getElementById('tname').value,
+        birthYear: document.getElementById('birth-year').value,
+        gender: document.querySelector('input[name="gender"]:checked').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        branch: document.getElementById('branch').value
+    };
+
+    // Chuyển hướng sang trang contact-done.html
+    window.location.href = 'contact-done.html';
+});
